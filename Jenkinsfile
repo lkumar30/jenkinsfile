@@ -10,6 +10,10 @@ node{
 			}
 
 
+	stage('jira_integration'){
+			echo 'integrating jira'
+			}	
+
 	stage('Maven_build'){
 			echo 'second hello-world'
 			}
@@ -23,5 +27,7 @@ node{
 	stage('deploy_to_tomcat'){
 			echo 'deployed to tomcat'
 			}
+
+	
 
 }
