@@ -20,4 +20,8 @@ node{
 			echo 'deploy to nexus'
 			}
 
+	stage('deploy_to_tomcat'){
+			echo 'deployed to tomcat'
+			}
+
 }
