@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-pipeline{
+
 	node{
 
 		stage('SCM-code_grab'){
@@ -35,4 +35,4 @@ pipeline{
 	}
 		
 		
-     }
+     
