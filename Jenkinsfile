@@ -4,7 +4,7 @@
 	node{
 
 		stage('SCM-code_grab'){
-		
+					checkout scm
 					sh 'echo "hello-world"'
 					sh 'echo "scm grab"'
 			
