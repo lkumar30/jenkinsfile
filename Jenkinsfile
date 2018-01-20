@@ -1,8 +1,8 @@
-//#!/usr/bin/env groovy
+#!/usr/bin/env groovy
 pipeline{
 
 
-	node{
+	//node{
 	
 	agent none
 	stages{
@@ -45,4 +45,4 @@ pipeline{
 		
 		
 	}     
-}
+//}
