@@ -18,6 +18,7 @@ pipeline{
 		stage('second'){
 			steps{
 				echo 'hellowworld-2'
+				sh 'mvn install'
 				}
 	}
 	}				
