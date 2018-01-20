@@ -18,7 +18,7 @@ pipeline{
 		stage('second'){
 			steps{
 				echo 'hellowworld-2'
-				sh 'mvn install'
+				sh 'mvn -f $WORKSPACE/simple_java/pom.xml  install'
 				}
 	}
 	}				
