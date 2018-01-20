@@ -5,6 +5,7 @@ pipeline{
 	//node{
 	
 	agent none
+	node{
 	stages{
 		
 		stage('SCM-code_grab'){
@@ -53,5 +54,6 @@ pipeline{
 			}
 		
 		
+}
 	}     
 //}
