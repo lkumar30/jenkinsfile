@@ -2,8 +2,15 @@
 
 
 	node{
-
+	tools {
+        maven 'Maven 3.3.9'
+        jdk 'jdk8'
+    }
+		stages{
 		stage('SCM-code_grab'){
+
+
+// to grab the source code that has maven repo too in to the workspace
 					checkout scm
 					sh 'echo "hello-world"'
 					sh 'echo "scm grab"'
@@ -17,7 +24,9 @@
 					echo 'second hellow-world'
 					}	
 
-		stage('Maven_build'){		
+		stage('Maven_build'){
+	
+// maven build from  the repo	
 					echo 'maven build'
 					echo 'third hello-world'
 					}
@@ -32,7 +41,7 @@
 					echo 'last hellow-world'
 					echo 'deployed to tomcat'
 					}
-	}
+			}
 		
 		
-     
+	}     
