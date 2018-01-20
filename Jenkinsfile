@@ -33,9 +33,6 @@ pipeline{
 					echo 'deployed to tomcat'
 					}
 	}
-		post{	
-			echo 'hello this is post clean'
-	
-					}
+		
 		
      }
