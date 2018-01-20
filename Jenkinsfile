@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 pipeline{
 	
-	agent master
+	agent none
 	
 	stages{
 		stage('first'){
