@@ -1,0 +1,38 @@
+<settings>
+
+<!-- #####################################  for nexus atifactory server credentials ############ -->
+<servers>
+  <server>
+   <id>releases</id>
+   <username>deployment</username>
+   <password>deployment123</password>
+  </server>
+  <server>
+    <id>snapshots</id>
+    <username>deployment</username>
+    <password>deployment123</password>
+  </server>
+</servers>
+<!-- **********************************  ****************************************** -->
+
+
+<!-- #################################for sonar qube  ############ -->
+
+<profiles>
+<profile>
+	<id>sonar</id>
+	<activation>
+	<activeByDefault>true</activeByDefault>
+	</activation>
+      <properties>
+	<!-- Optional URL to server. Default value is http://localhost:9000 -->
+	<sonar.host.url>
+	http://localhost:9000
+	</sonar.host.url>
+      </properties>
+</profile>
+</profiles>
+<!-- **********************************  ****************************************** -->
+
+</settings>
+   
