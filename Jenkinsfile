@@ -2,7 +2,7 @@
 pipeline{
 	
 	agent none
-def workspace = pwd()
+
 
 	 tools { 
         maven 'maven-3.5.2' 
