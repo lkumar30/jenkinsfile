@@ -18,7 +18,10 @@ pipeline{
 		stage('second'){
 			steps{
 				echo 'hellowworld-2'
-				sh 'mvn -f $WORKSPACE/simple_java/pom.xml  install'
+				def workspace = pwd()
+    //${workspace} will now contain an absolute path to job workspace on slave
+				sh 'cd simple_java'
+				sh 'mvn   install'
 				}
 	}
 	}				
