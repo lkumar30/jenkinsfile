@@ -11,6 +11,14 @@ pipeline{
 					}
 			}
 	
-					
+	agent none
+
+	stages{
+		stage('second')
+			steps{
+				echo 'hellowworld-2'
+				}
+	}
+	}				
 
 	}
