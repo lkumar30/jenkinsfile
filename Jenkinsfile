@@ -4,8 +4,8 @@ node{
 
 	stage('SCM-code_grab'){
 		steps{
-			echo 'hello-world'
-			echo 'scm grab'
+			sh 'echo "hello-world"'
+			sh 'echo "scm grab"'
 		}	
 
 			}
