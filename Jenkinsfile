@@ -21,7 +21,7 @@ def workspace = pwd()
 				echo 'hellowworld-2'
 				
     //${workspace} will now contain an absolute path to job workspace on slave
-				sh 'cd simple_java'
+				sh 'cd /var/jenkins_home/workspace/simple_java'
 				sh 'mvn   install'
 				}
 	}
