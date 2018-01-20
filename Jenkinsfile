@@ -11,10 +11,11 @@ pipeline{
 
 
 // to grab the source code that has maven repo too in to the workspace
+			steps{
 					checkout scm
 					sh 'echo "hello-world"'
 					sh 'echo "scm grab"'
-			
+			}
 
 					}
 
