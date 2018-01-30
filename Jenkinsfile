@@ -25,6 +25,12 @@ pipeline{
 				sh 'mvn   install'
 				}
 	}
-	}				
+
+		stage('last'){ 
+			steps{
+				echo 'last step'
+				}
+			}                                 
+ 	}				
 
 }	
